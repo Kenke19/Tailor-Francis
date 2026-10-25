@@ -1,12 +1,12 @@
 const PRODUCTS=[
-{id:1,name:'Chic Two-Piece',cat:'Two-Piece',price:18,sizes:['M','L','XL','XXL'],img:'img/r2w.webp'},
-{id:2,name:'Blue Men Two-Piece',cat:'Two-Piece',price:50,sizes:['M','L','XL'],img:'img/r2wm.webp'},
-{id:3,name:'Classic Romper',cat:'Two-Piece',price:10,sizes:['M','L','XL','XXL'],img:'img/r2w2.webp'},
-{id:4,name:'Cotton Set',cat:'Two-Piece',price:50,sizes:['L','XL','XXL'],img:'img/r2wm3.webp'},
-{id:5,name:'Ankara Two-Piece',cat:'Ankara wear',price:40,sizes:['M','L','XL'],img:'img/r2wm2.webp'},
-{id:6,name:'Women Navy Set',cat:'Two-Piece',price:180,sizes:['S','M','L','XL'],img:'img/r2w1.webp'},
-{id:7,name:'T-Shirt Set',cat:'Shirts',price:90,sizes:['S','M','L','XL'],img:'img/r2wm1.webp'},
-{id:8,name:'Tailored Senator',cat:'Senator',price:200,sizes:['XL','L','2XL','3XL'],img:'img/senator3.webp'}
+{id:1,name:'Chic Two-Piece',cat:'Two-Piece',price:18,sizes:['M','L','XL','XXL'],img:'r2w.webp'},
+{id:2,name:'Blue Men Two-Piece',cat:'Two-Piece',price:50,sizes:['M','L','XL'],img:'r2wm.webp'},
+{id:3,name:'Classic Romper',cat:'Two-Piece',price:10,sizes:['M','L','XL','XXL'],img:'r2w2.webp'},
+{id:4,name:'Cotton Set',cat:'Two-Piece',price:50,sizes:['L','XL','XXL'],img:'r2wm3.webp'},
+{id:5,name:'Ankara Two-Piece',cat:'Ankara wear',price:40,sizes:['M','L','XL'],img:'r2wm2.webp'},
+{id:6,name:'Women Navy Set',cat:'Two-Piece',price:180,sizes:['S','M','L','XL'],img:'r2w1.webp'},
+{id:7,name:'T-Shirt Set',cat:'Shirts',price:90,sizes:['S','M','L','XL'],img:'r2wm1.webp'},
+{id:8,name:'Tailored Senator',cat:'Senator',price:200,sizes:['XL','L','2XL','3XL'],img:'senator3.webp'}
 ];
 const fmt=n=>'£'+n.toLocaleString('en-NG');
 const grid=document.getElementById('shop-grid'),cartEl=document.getElementById('cart-items');
