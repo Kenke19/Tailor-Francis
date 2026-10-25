@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Contact | Francis Tailoring</title>
+        <meta name="description" content="Visit or contact Francis Tailoring.">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header id="site-header"></header>
+        <main>
+            <div class="page-head">
+                <h1>Contact us</h1>
+            </div>
+            <section class="section">
+                <div class="contact-grid">
+                    <div>
+                        <h2>Visit the shop</h2>
+                        <p>12 Sample Street, Abuja<br>Mon–Sat, 9am–6pm</p>
+                        <p>Phone: +234 800 000 0000<br>Email: hello@example.com</p>
+                        <div class="ph" style="min-height:220px">Replace with a Google Maps embed</div>
+                    </div>
+                    <form class="form" data-form="message" style="margin:0" novalidate>
+                        <label for="n">Name</label>
+                        <input id="n" name="Name" required>
+                        <label for="e">Email</label>
+                        <input id="e" name="Email" type="email" required>
+                        <label for="m">Message</label>
+                        <textarea id="m" name="Message" rows="5" required></textarea>
+                        <br>
+                        <button class="btn" type="submit">Send message</button>
+                        <div class="toast" role="status"></div>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <footer id="site-footer"></footer>
+        <script src="script.js"></script>
+    </body>
+</html>

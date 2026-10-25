@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Book or Order | Francis Tailoring</title>
+        <meta name="description" content="Book a fitting or request an order.">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header id="site-header"></header>
+
+        <main>
+            <div class="page-head">
+                <h1>Book a fitting or request an order</h1>
+                <p class="lead" style="margin:10px auto 0">Measurements are optional now; we can take them at the fitting.</p>
+            </div>
+
+            <section class="section">
+                <form class="form" data-form="booking" novalidate>
+                    <h3>Your details</h3>
+                    <div class="row">
+                        <div>
+                            <label for="n">Full name</label>
+                            <input id="n" name="Name" required>
+                        </div>
+                        <div>
+                            <label for="p">Phone</label>
+                            <input id="p" name="Phone" type="tel" required>
+                        </div>
+                    </div>
+                    
+                    <label for="e">Email</label>
+                    <input id="e" name="Email" type="email">
+                    <h3>Request</h3>
+                    <div class="row">
+                        <div>
+                            <label for="t">Type</label>
+                            <select id="t" name="Type" required>
+                                <option value="">Choose…</option>
+                                <option>Fitting appointment</option>
+                                <option>Order: suit</option>
+                                <option>Order: native wear</option>
+                                <option>Alteration</option>
+                            </select>
+                        </div>   
+                        <div>
+                            <label for="d">Preferred date</label>
+                            <input id="d" name="Date" type="date" required>
+                        </div>
+                    </div>
+                    <label for="m">Details (style, fabric, event date)</label>
+                    <textarea id="m" name="Details" rows="3"></textarea>
+                    <h3>Measurements (inches)</h3>
+                    <div class="row row3">
+                        <div>
+                            <label>Neck</label>
+                            <input name="Neck" type="number" step=".1">
+                        </div>
+                        <div>
+                            <label>Chest</label>
+                            <input name="Chest" type="number" step=".1">
+                        </div>
+                        <div>
+                            <label>Waist</label>
+                            <input name="Waist" type="number" step=".1">
+                        </div>
+                        <div>
+                            <label>Shoulder</label>
+                            <input name="Shoulder" type="number" step=".1">
+                        </div>
+                        <div>
+                            <label>Sleeve</label>
+                            <input name="Sleeve" type="number" step=".1">
+                        </div>
+                        <div>
+                            <label>Length</label>
+                            <input name="Length" type="number" step=".1">
+                        </div>
+                        <div>
+                            <label>Hip</label>
+                            <input name="Hip" type="number" step=".1">
+                        </div>
+                        <div>
+                            <label>Inseam</label>
+                            <input name="Inseam" type="number" step=".1">
+                        </div>
+                    </div>
+                    <p class="note">Your entries are saved on this device so you can finish later.</p>
+                    <br>
+                    <button class="btn" type="submit">Send request</button>
+                    <div class="toast" role="status"></div>
+                </form>
+            </section>
+        </main>
+
+        <footer id="site-footer"></footer>
+        <script src="script.js"></script>
+    </body>
+</html>

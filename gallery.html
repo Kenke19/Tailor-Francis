@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Gallery | Francis Tailoring</title>
+        <meta name="description" content="Our tailored work.">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header id="site-header"></header>
+        <main>
+            <div class="page-head">
+                <h1>Our work</h1>
+            </div>
+            <section class="section">
+                <div class="filters">
+                    <button class="on" data-f="all">All</button>
+                    <button data-f="suits">Suits</button>
+                    <button data-f="native">Native wear</button>
+                    <button data-f="alter">Alterations</button>
+                </div>
+                <div class="gallery">
+                    <img src="img/senator1.webp" data-f="native" alt="Senator 1">
+                    <img src="img/suit2.jpg" alt="Suit 1">
+                    <img src="img/r2wm1.webp" alt="Ready-to-wear">
+                    <img src="img/senator2.webp" alt="Senator 3">
+                    <img src="img/suit3.jpg" alt="Suit 2">
+                    <img src="img/senator3.webp" alt="Senator 4">
+                </div>
+            </section>
+        </main>
+        <div class="lightbox">
+            <button aria-label="Close">×</button>
+            <div class="ph"></div>
+        </div>
+
+        <footer id="site-footer"></footer>
+        <script src="script.js"></script>
+    </body>
+</html>

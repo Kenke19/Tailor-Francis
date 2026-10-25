@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Shop Ready-to-Wear | Francis Tailoring</title>
+        <meta name="description" content="Ready-to-wear suits, native wear and shirts.">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header id="site-header"></header>
+        <main>
+            <div class="page-head">
+                <h1>Ready to wear</h1>
+                <p class="lead" style="margin:10px auto 0">Made by us, ready to collect or deliver. Need a different fit? <a href="book.html">
+                    <u>Order a custom piece</u></a>.
+                </p>
+            </div>
+
+            <section class="section">
+                <div class="cats" id="cats"></div>
+                <div class="shop-grid" id="shop-grid"></div>
+            </section>
+        </main>
+        <button class="cart-btn" id="open-cart">Cart (<span id="cart-count">0</span>)</button>
+        <aside class="drawer" id="drawer" aria-label="Shopping cart">
+            <button class="close" aria-label="Close cart">×</button>
+            <h2>Your cart</h2>
+            <div id="cart-items"></div>
+            <div class="total"><span>Total</span><span id="cart-total">₦0</span></div>
+
+            <form id="checkout">
+                <label for="cn">Your name</label>
+                <input id="cn" name="cname" required>
+                <label for="cp">Phone</label>
+                <input id="cp" name="cphone" type="tel" required>
+                <label for="ca">Delivery area (optional)</label>
+                <input id="ca" name="carea"><br><br>
+                <button class="btn" type="submit" style="width:100%">Order on WhatsApp</button>
+                <p class="note" style="margin-top:10px">Payment and delivery are agreed on WhatsApp.</p>
+                <div class="toast" id="msg" role="status"></div>
+            </form>
+        </aside>
+        <footer id="site-footer"></footer>
+        <script src="script.js"></script>
+        <script src="shop.js"></script>
+    </body>
+</html>
