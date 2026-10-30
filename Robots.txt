@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+ 
+Sitemap: https://tailor-francis.netlify.app/sitemap.xml
