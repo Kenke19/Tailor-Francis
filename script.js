@@ -1,4 +1,4 @@
-const SHOP={name:'Tailor Francis',phone:'+44 7903 419398',wa:'2347040445125',email:'kenke2003@gmail.com',address:'72 Market Street, Watford Hertfordshire, United Kingdom',po:'Post code: WD18 0PX', hours:'Mon–Sat, 9am–6pm',ig:'https://instagram.com/yourhandle',fb:'https://facebook.com/yourpage',tt:'https://tiktok.com/@yourhandle'};
+const SHOP={name:'Tailor Francis',phone:'+44 7903 419398',wa:'2347040445125',email:'kenke2003@gmail.com',address:'72 Market Street, Watford Hertfordshire, United Kingdom',po:'Post code: WD18 0PX', hours:'Mon–Sun, 9am–6pm',ig:'https://instagram.com/yourhandle',fb:'https://facebook.com/yourpage',tt:'https://tiktok.com/@yourhandle'};
 // ======================
 const pages=[['index.html','Home'],['about.html','About'],['shop.html','Shop'],['gallery.html','Gallery'],['book.html','Book / Order'],['contact.html','Contact']];
 const here=location.pathname.split('/').pop()||'index.html';
