@@ -3,39 +3,70 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1">
-        <title>Gallery | Francis Tailoring</title>
-        <meta name="description" content="Our tailored work.">
+        <title>Gallery | Tailor Francis</title>
+        <meta name="description" content="Suits, senator wear and ready-to-wear outfits made by Tailor Francis.">
         <link rel="stylesheet" href="style.css">
     </head>
-
     <body>
         <header id="site-header"></header>
         <main>
             <div class="page-head">
                 <h1>Our work</h1>
+                <p class="lead" style="margin:12px auto 0">Suits, native wear and ready-to-wear pieces, cut and finished in our workshop. Tap any piece to see it larger.</p>
             </div>
             <section class="section">
                 <div class="filters">
                     <button class="on" data-f="all">All</button>
                     <button data-f="suits">Suits</button>
                     <button data-f="native">Native wear</button>
-                    <button data-f="alter">Alterations</button>
+                    <button data-f="rtw">Ready to wear</button>
                 </div>
+                <p class="note center" id="count"></p>
                 <div class="gallery">
-                    <img src="senator1.webp" data-f="native" alt="Senator 1">
-                    <img src="suit2.jpg" alt="Suit 1">
-                    <img src="r2wm1.webp" alt="Ready-to-wear">
-                    <img src="senator2.webp" alt="Senator 3">
-                    <img src="suit3.jpg" alt="Suit 2">
-                    <img src="senator3.webp" alt="Senator 4">
+                    <figure data-cat="native" data-title="Senator set">
+                        <img src="senator1.webp" alt="Senator wear, set 1" loading="lazy" decoding="async">
+                        <figcaption><small>Native wear</small>Senator set</figcaption>
+                    </figure>
+                    <figure data-cat="suits" data-title="Tailored suit">
+                        <img src="suit2.jpg" alt="Tailored suit 1" loading="lazy" decoding="async">
+                        <figcaption><small>Suits</small>Tailored suit</figcaption>
+                    </figure>
+                    <figure data-cat="rtw" data-title="Ready-to-wear outfit">
+                        <img src="r2wm1.webp" alt="Ready-to-wear outfit" loading="lazy" decoding="async">
+                        <figcaption><small>Ready to wear</small>Ready-to-wear outfit</figcaption>
+                    </figure>
+                    <figure data-cat="native" data-title="Senator set">
+                        <img src="senator2.webp" alt="Senator wear, set 2" loading="lazy" decoding="async">
+                        <figcaption><small>Native wear</small>Senator set</figcaption>
+                    </figure>
+                    <figure data-cat="suits" data-title="Tailored suit">
+                        <img src="suit3.jpg" alt="Tailored suit 2" loading="lazy" decoding="async">
+                        <figcaption><small>Suits</small>Tailored suit</figcaption>
+                    </figure>
+                    <figure data-cat="native" data-title="Senator set">
+                        <img src="senator3.webp" alt="Senator wear, set 3" loading="lazy" decoding="async">
+                        <figcaption><small>Native wear</small>Senator set</figcaption>
+                    </figure>
+                </div>
+                <div class="gal-cta">
+                    <h2>Like what you see?</h2>
+                    <p>Send us a photo of a style you love, or book a fitting and we will make it to your measure.</p>
+                    <a href="book.html" class="btn">Book a fitting</a>
+                    <a href="shop.html" class="btn-outline">Shop ready-to-wear</a>
                 </div>
             </section>
         </main>
-        <div class="lightbox">
-            <button aria-label="Close">×</button>
-            <div class="ph"></div>
-        </div>
 
+        <div class="lightbox" role="dialog" aria-label="Photo viewer">
+            <button class="lb-close" aria-label="Close">×</button>
+            <button class="lb-prev" aria-label="Previous">‹</button>
+            <button class="lb-next" aria-label="Next">›</button>
+            <figure>
+                <img alt="">
+                <figcaption></figcaption>
+                <span class="lb-num"></span>
+            </figure>
+        </div>
         <footer id="site-footer"></footer>
         <script src="script.js"></script>
     </body>
