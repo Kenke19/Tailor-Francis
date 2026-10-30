@@ -12,7 +12,7 @@ if(f)f.innerHTML=`<div class="foot"><div class="fbrand"><a href="index.html" cla
 <div><h4>Explore</h4>${pages.map(p=>`<a href="${p[0]}">${p[1]}</a>`).join('')}</div>
 <div><h4>What we make</h4><a href="book.html">Bespoke suits</a><a href="book.html">Native wear</a><a href="book.html">Alterations</a><a href="shop.html">Ready to wear</a></div>
 <div><h4>Visit us</h4><p>${SHOP.address}</p><p>${SHOP.po}</p><p>${SHOP.hours}</p><a href="tel:${SHOP.phone.replace(/\s/g,'')}">${SHOP.phone}</a><a href="mailto:${SHOP.email}">${SHOP.email}</a><a href="book.html" class="btn fbtn">Book a fitting</a></div></div>
-<div class="fbar"><span>© ${new Date().getFullYear()} ${SHOP.name}. All rights reserved.</span><span>Crafted with care in Abuja</span></div>
+<div class="fbar"><span>© ${new Date().getFullYear()} ${SHOP.name}. All rights reserved.</span></div>
 <a class="wa" href="https://wa.me/${SHOP.wa}" target="_blank" rel="noopener">WhatsApp us</a><button class="top" aria-label="Back to top">↑</button>`;
 const mb=document.querySelector('.menu-btn'),nl=document.getElementById('nl');
 mb&&mb.addEventListener('click',()=>{const o=nl.classList.toggle('open');mb.setAttribute('aria-expanded',o)});
